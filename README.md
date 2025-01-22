@@ -1,4 +1,4 @@
-# Создани игр для практического применения знаний HTML/CSS и JavaScript.
+# Создание игр для практического применения знаний HTML/CSS и JavaScript.
 
 ## Guess the number
 
