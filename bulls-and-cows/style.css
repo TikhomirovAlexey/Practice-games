@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20vh 1fr 10vh;
+}
+
+.header, .footer {
+    grid-column: span 12;
+    background-color: #c23737;
+}
+
+.left, .right {
+    grid-column: span 2;
+    background-color: #5df848;
+}
+
+.center {
+    grid-column: span 8;
+    background-color: #4ef9ff;
+}
