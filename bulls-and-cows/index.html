@@ -4,17 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Быки и коровы</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <section class="game">
             <header class="header">
-                <h1 class="title">Игра "Быки и коровы"</h1>
+                <h1 class="title">Игра &laquo;Быки и&nbsp;коровы&raquo;</h1>
             </header>
             <div class="left">
                 <div class="box">
                     <h2 class="subtitle">Быки</h2>
-                    <p class="text bulls-count">2</p>
+                    <p class="text bulls-count">0</p>
                 </div>
                 <div class="box">
                     <h2 class="subtitle">Коровы</h2>
@@ -22,28 +25,30 @@
                 </div>
             </div>
             <div class="center">
-                <h2 class="center__subtitle subtitle game-info-box">Мы загадали последовательность из четырех цифр. Вам нужно отгадать не только сами цифры но, и их порядок!</h2>
+                <h2 class="center__subtitle subtitle">Мы&nbsp;загадали последовательность из&nbsp;четырех цифр. Вам нужно отгадать не&nbsp;только сами цифры&nbsp;но, и&nbsp;их&nbsp;порядок!</h2>
                 <div class="center__box box">
-                    <p class="text text-for-user-info">Введите число из 4 цифр.</p>
+                    <p class="text text-for-user-info">Введите число из&nbsp;4&nbsp;цифр.</p>
                     <input class="input" type="number">
                 </div>
                 <div class="buttons-box">
-                    <button class="button button-restart">Начать заново</button>
-                    <button class="button button-answer">Ответить</button>
-                    <button class="button button-reset">Очистить</button>
-                    <button class="button button-answer">Закончить</button>
+                    <div class="buttons-box__row buttons-actions">
+                        <button class="button button-answer">Ответить</button>
+                        <button class="button button-reset">Очистить</button>
+                    </div>
+                    <div class="buttons-box__row buttons-start-stop">
+                        <button class="button button-restart">Начать заново</button>
+                        <button class="button button-stop">Закончить</button>
+                    </div>
                 </div>
             </div>
             <div class="right">
                 <h2 class="subtitle">Предыдущие ответы</h2>
                 <div class="box user-answer-box">
-                    <p class="text">2134</p>
-                    <p class="text">2134</p>
                 </div>
             </div>
             <footer class="footer">
                 <p class="text footer__text">
-                    Правила игры: Игра загадывает случайное число из 4 цифр. Все цифры уникальные. Задача игрока угадать число. Если в веденном ответе есть цифры, которые совпадают с цифрами в загаданном числе, но они не имеют одинаковый инфекс(место) в числе, то это называется коровы. Если игрок угадал цифру и ее позицию в числе, то это называется быки. Пример: загаданное число - `1234`, ответ игрока `1345`. `1` - является быком, `34` - являются коровами.
+                    Правила игры: Игра загадывает случайное число из&nbsp;4&nbsp;цифр. Все цифры уникальные. Задача игрока угадать число. Если в&nbsp;веденном ответе есть цифры, которые совпадают с&nbsp;цифрами в&nbsp;загаданном числе, но&nbsp;они не&nbsp;имеют одинаковый инфекс(место) в&nbsp;числе, то&nbsp;это называется коровы. Если игрок угадал цифру и&nbsp;ее&nbsp;позицию в&nbsp;числе, то&nbsp;это называется быки. Пример: загаданное число&nbsp;&mdash; `1234`, ответ игрока `1345`. `1` - является быком, `34` - являются коровами.
                 </p>
             </footer>
         </section>
