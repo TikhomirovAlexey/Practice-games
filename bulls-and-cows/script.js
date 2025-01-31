@@ -24,7 +24,7 @@ buttonsStartStop.addEventListener('click', madeStartStopEvent);
 function madeActionsEvent(event) {
     if (event.target.classList.contains('button-answer')) {
         const userAnswerArrayWithStrings = inputEl.value.split('');
-        if (userAnswerArrayWithStrings.length == 0 || userAnswerArrayWithStrings.length > 4) {
+        if (userAnswerArrayWithStrings.length != 4) {
             getInfoForUser('Необходимо ввести число из&nbsp;4&nbsp;цифр!');
             return;
         }

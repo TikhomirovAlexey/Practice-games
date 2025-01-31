@@ -16,19 +16,34 @@
     opacity: 0.5;
 }
 
+.title {
+    font-size: 58px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 28px;
+    text-align: center;
+}
+
 .text {
     font-size: 24px;
+    text-align: center;
 }
 
 .game {
+    font-family: "Montserrat", sans-serif;
     height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: "Montserrat", sans-serif;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
 }
 
 .header, .footer {
-    grid-column: span 12;
     background-color: var(--color-primary);
     display: flex;
     align-items: center;
@@ -52,12 +67,7 @@
 }
  
 .left, .right {
-    grid-column: span 2;
     background-color: var(--color-primary-lite);
-}
-
-.center {
-    grid-column: span 8;
 }
 
 .center__box {
@@ -65,8 +75,7 @@
 }
 
 .center__subtitle {
-    width: 70%;
-    text-align: center;
+    width: 80%;
 }
 
 .right {
@@ -80,12 +89,7 @@
 
 .footer__text {
     width: 80%;
-    text-align: center;
     font-size: 18px;
-}
-
-.title {
-    font-size: 58px;
 }
 
 .input {
@@ -111,8 +115,74 @@
     font-family: inherit;
 }
 
-.button:hover {
-    background-color: var(--color-lite);
-    color: var(--color-primary);
-    border-color: var(--color-primary);
+
+@media (hover: hover) {
+    
+    .button:hover {
+        background-color: var(--color-lite);
+        color: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+
+}
+
+@media (hover: none) {
+    
+    .button:active {
+        background-color: var(--color-lite);
+        color: var(--color-primary);
+        border-color: var(--color-primary);
+    }
+    
+}
+
+@media (width < 1024px) {
+
+    .title {
+        font-size: 44px;
+    }
+    
+    .subtitle {
+        font-size: 24px;
+    }
+    
+    .text {
+        font-size: 20px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 200px;
+    }
+
+    .left {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (width < 768px) {
+
+    .title {
+        font-size: 24px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+    }
+    
+    .text {
+        font-size: 16px;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .button {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
 }
