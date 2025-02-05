@@ -1,0 +1,33 @@
+.game
+    height: 100vh
+    background-color: var(--color-dark)
+    background-image: url('../img/main-background.jpg')
+    background-size: cover
+    background-position: center
+    font-family: var(--font-family-primary)
+    color: var(--color-lite)
+    display: grid
+    grid-template-rows: auto 1fr auto
+
+.header
+    padding-block: 24px
+    background-color: var(--color-dark-opacity)
+
+.buttons
+    display: flex
+    justify-content: space-evenly
+    column-gap: 12px
+
+
+.main-action
+    display: grid
+    grid-template-columns: 350px 1fr 350px
+
+.column
+    padding: 24px
+    display: flex
+    flex-direction: column
+    align-items: center
+    row-gap: 18px
+    &__info, &__score
+        background-color: var(--color-dark-opacity)

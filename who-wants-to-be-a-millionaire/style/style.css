@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url("../fonts/Merriweather-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --font-family-primary: "Merriweather", sans-serif;
+  --color-lite: #fff;
+  --color-dark: #000;
+  --color-dark-opacity: #00000073;
+  --color-primary: #562870;
+  --color-primaty-lite: #7d4390;
+  --color-accent: #876d30;
+  --color-accent-lite: #e09f3b;
+  --color-win: #1aa325;
+  --color-lose: #be1212;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+svg *[fill] {
+  fill: currentColor;
+}
+
+svg *[stroke] {
+  stroke: currentColor;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.button {
+  font-size: 18px;
+  font-family: inherit;
+  padding: 0.6em 1em;
+  color: var(--color-lite);
+  border: 2px solid var(--color-accent-lite);
+  border-radius: 40%;
+  background-color: var(--color-primary);
+  background-image: url(../img/back-mini.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.button_hint {
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em 0;
+}
+
+.text {
+  font-size: 24px;
+}
+.text_score {
+  display: flex;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.list__item:nth-last-of-type(5n) {
+  color: var(--color-accent-lite);
+}
+
+.game {
+  height: 100vh;
+  background-color: var(--color-dark);
+  background-image: url("../img/main-background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: var(--font-family-primary);
+  color: var(--color-lite);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  padding-block: 24px;
+  background-color: var(--color-dark-opacity);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+.main-action {
+  display: grid;
+  grid-template-columns: 350px 1fr 350px;
+}
+
+.column {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 18px;
+}
+.column__info, .column__score {
+  background-color: var(--color-dark-opacity);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+svg *[fill] 
+    fill: currentColor
+
+svg *[stroke] 
+    stroke: currentColor
+    
+.title 
+    font-size: 48px
+    font-weight: 400
+    letter-spacing: 2px
+    text-align: center
+
+.button
+    font-size: 18px
+    font-family: inherit
+    padding: 0.6em 1em
+    color: var(--color-lite)
+    border: 2px solid var(--color-accent-lite)
+    border-radius: 40%
+    background-color: var(--color-primary)
+    background-image: url(../img/back-mini.jpg)
+    background-size: cover
+    background-position: center
+    &_hint
+        min-width: 60px
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0.3em 0
+
+.text
+    font-size: 24px
+    &_score
+        display: flex
+        column-gap: 18px
+
+.list
+    list-style-type: none
+    display: flex
+    flex-direction: column
+    row-gap: 12px
+    &__item:nth-last-of-type(5n)
+        color: var(--color-accent-lite)
+        
+
+    

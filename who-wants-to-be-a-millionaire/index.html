@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Who Wants To Be A Millionaire?</title>
+        <link rel="shortcut icon" href="img/icon/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <div class="game">
+            <header class="header">
+                <h1 class="title">Кто хочет стать миллионером?</h1>
+            </header>
+            <div class="main-action">
+                <div class="column column__info">
+                    <div class="buttons">
+                        <button class="button button-start">Старт</button>
+                        <button class="button button-end">Закончить</button>
+                    </div>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text">
+                                Очки:
+                                <span class="user-score">0</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text">
+                                Вопросов осталось:
+                                <span class="questions-count">15</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column column__game">
+                    sfdfs
+                </div>
+                <div class="column column__score">
+                    <div class="buttons">
+                        <button class="button button_hint button-50" title="Убрать два неверных варианта">50:50</button>
+                        <button class="button button_hint button-phone" title="звонок другу">
+                            <svg
+                                width="24px"
+                                height="24px"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z" fill="#1C274C"/>
+                            </svg>
+                        </button>
+                        <button class="button button_hint button-50" title="помощь зала">
+                            <svg
+                                width="24px"
+                                height="24px"
+                                viewBox="-3 0 32 32"
+                                version="1.1"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M20.906 20.75c1.313 0.719 2.063 2 1.969 3.281-0.063 0.781-0.094 0.813-1.094 0.938-0.625 0.094-4.563 0.125-8.625 0.125-4.594 0-9.406-0.094-9.75-0.188-1.375-0.344-0.625-2.844 1.188-4.031 1.406-0.906 4.281-2.281 5.063-2.438 1.063-0.219 1.188-0.875 0-3-0.281-0.469-0.594-1.906-0.625-3.406-0.031-2.438 0.438-4.094 2.563-4.906 0.438-0.156 0.875-0.219 1.281-0.219 1.406 0 2.719 0.781 3.25 1.938 0.781 1.531 0.469 5.625-0.344 7.094-0.938 1.656-0.844 2.188 0.188 2.469 0.688 0.188 2.813 1.188 4.938 2.344zM3.906 19.813c-0.5 0.344-0.969 0.781-1.344 1.219-1.188 0-2.094-0.031-2.188-0.063-0.781-0.188-0.344-1.625 0.688-2.25 0.781-0.5 2.375-1.281 2.813-1.375 0.563-0.125 0.688-0.469 0-1.656-0.156-0.25-0.344-1.063-0.344-1.906-0.031-1.375 0.25-2.313 1.438-2.719 1-0.375 2.125 0.094 2.531 0.938 0.406 0.875 0.188 3.125-0.25 3.938-0.5 0.969-0.406 1.219 0.156 1.375 0.125 0.031 0.375 0.156 0.719 0.313-1.375 0.563-3.25 1.594-4.219 2.188zM24.469 18.625c0.75 0.406 1.156 1.094 1.094 1.813-0.031 0.438-0.031 0.469-0.594 0.531-0.156 0.031-0.875 0.063-1.813 0.063-0.406-0.531-0.969-1.031-1.656-1.375-1.281-0.75-2.844-1.563-4-2.063 0.313-0.125 0.594-0.219 0.719-0.25 0.594-0.125 0.688-0.469 0-1.656-0.125-0.25-0.344-1.063-0.344-1.906-0.031-1.375 0.219-2.313 1.406-2.719 1.031-0.375 2.156 0.094 2.531 0.938 0.406 0.875 0.25 3.125-0.188 3.938-0.5 0.969-0.438 1.219 0.094 1.375 0.375 0.125 1.563 0.688 2.75 1.313z" fill="#000000"titlepath>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="list">
+                        <li class="list__item">
+                            <p class="text text_score">
+                                15 <span>3 000 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                14 <span>1 500 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                13 <span>800 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                12 <span>400 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                11 <span>200 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                10 <span>100 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                9 <span>50 000 </span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                8 <span>25 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                7 <span>15 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                6 <span>10 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                5 <span>5 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                4 <span>3 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                3 <span>2 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                2 <span>1 000</span>
+                            </p>
+                        </li>
+                        <li class="list__item">
+                            <p class="text text_score">
+                                1 <span>500</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer class="footer"></footer>
+        </div>
+    </body>
+</html>
