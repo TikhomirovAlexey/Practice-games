@@ -3,6 +3,10 @@
     margin: 0
     box-sizing: border-box
 
+img
+    max-width: 100%
+    height: auto
+
 svg *[fill] 
     fill: currentColor
 
@@ -26,6 +30,7 @@ svg *[stroke]
     background-image: url(../img/back-mini.jpg)
     background-size: cover
     background-position: center
+    transition-duration: 0.3s
     &_hint
         min-width: 60px
         display: flex
@@ -43,7 +48,7 @@ svg *[stroke]
     list-style-type: none
     display: flex
     flex-direction: column
-    row-gap: 12px
+    row-gap: 8px
     &__item:nth-last-of-type(5n)
         color: var(--color-accent-lite)
         

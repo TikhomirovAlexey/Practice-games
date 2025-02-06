@@ -9,7 +9,7 @@
     display: grid
     grid-template-rows: auto 1fr auto
 
-.header
+.header, .footer
     padding-block: 24px
     background-color: var(--color-dark-opacity)
 
@@ -24,10 +24,65 @@
     grid-template-columns: 350px 1fr 350px
 
 .column
-    padding: 24px
+    padding: 18px
     display: flex
     flex-direction: column
     align-items: center
-    row-gap: 18px
+    row-gap: 12px
     &__info, &__score
         background-color: var(--color-dark-opacity)
+        margin-block: 18px
+        border-radius: 20px
+
+.main-logo
+    max-width: 400px
+
+.questions-box
+    flex-grow: 1
+    width: 80%
+    display: flex
+    flex-direction: column
+    align-items: center
+    row-gap: 8px
+
+.question, .answer
+    position: relative
+    min-height: 50px
+    background-color: var(--color-dark)
+    border: 2px solid var(--color-lite)
+
+.question
+    width: 80%
+
+.question::after, .question::before, .answer::after, .answer::before
+    content: ''
+    display: block
+    background-color: var(--color-dark)
+    height: 71%
+    aspect-ratio: 1
+    rotate: 45deg
+    position: absolute
+
+.question::after, .answer::after
+    border-top: 2px solid var(--color-lite)
+    border-right: 2px solid var(--color-lite)
+    right: -2px
+    top: 5px
+    translate: 50% 0
+
+.question::before, .answer::before
+    border-bottom: 2px solid var(--color-lite)
+    border-left: 2px solid var(--color-lite)
+    left: -2px
+    top: 5px
+    translate: -50% 0
+
+.answers
+    width: 80%
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    gap: 20px 52px
+
+.footer
+    display: flex
+    justify-content: center
